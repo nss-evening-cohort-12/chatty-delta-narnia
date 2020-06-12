@@ -1,13 +1,10 @@
-import '../styles/main.scss';
+import utils from './helpers/utils';
 import styleChanges from './styleChanges';
-
-const printToDom = (selector, text) => {
-  $(selector).html(text);
-};
+import '../styles/main.scss';
 
 const nav = () => {
   const domString = '<a id="dark-mode" class="toggle moon"><i class="fas fa-moon"></i></a>';
-  printToDom('#test', domString);
+  utils.printToDom('#test', domString);
 };
 
 $('body').on('click', '#dark-mode', styleChanges.darkMode);
