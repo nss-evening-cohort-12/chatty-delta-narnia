@@ -14,7 +14,8 @@ A Narnia themed group project making a chatroom to practice modules, SASS stylin
 
 ## How To Run
 1. Clone down this repo
-1. Use your favorite http server (like [http-server](https://www.npmjs.com/package/http-server)) to serve it up (`hs`)
+1. Install Dev Dependencies and Regular Dependencies
+1. Use your favorite http server (like [http-server](https://www.npmjs.com/package/http-server)) to serve it up (`npm start`)
 1. In your browser, go where it's being served (default is localhost:8081)
 
 ## Contributors
