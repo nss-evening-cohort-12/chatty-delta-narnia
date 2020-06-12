@@ -1,6 +1,60 @@
 @import "~bootstrap/scss/bootstrap";
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "../styles/styles";
+@import "./mixins";
+
+// Light Mode
 
 body {
-    background-color: palevioletred;
+    background-color: $light;
+    color: $dark;
+}
+
+// Dark Mode 
+
+.dark-mode {
+    background-color: $dark;
+    color: $light;
+}
+
+// Moon Hover Effect
+
+.moon {
+    @include hoverEffect($light);
+}
+.fa-moon {
+    @include faStyle();
+}
+.fa-moon:hover {
+    color: $light;
+}
+.moon:before {
+    @include hoverBefore($dark);
+}
+.moon:hover, .moon:focus, .moon:active {
+    @include hoverFocus();
+}
+.moon:hover:before, .moon:focus:before, .moon:active:before {
+    @include hoverFocusBefore();
+}
+
+// Sun Hover Effect
+
+.sun {
+    @include hoverEffect($dark);
+}
+.fa-sun {
+    @include faStyle();
+}
+.fa-sun:hover {
+    color: $dark;
+}
+.sun:before {
+    @include hoverBefore($light);
+}
+.sun:hover, .sun:focus, .sun:active {
+    @include hoverFocus();
+}
+.sun:hover:before, .sun:focus:before, .sun:active:before {
+    @include hoverFocusBefore();
 }
