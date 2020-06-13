@@ -13,7 +13,9 @@
     "url": "https://github.com/nss-evening-cohort-12/chatty-delta-narnia"
   },
   "keywords": [],
-  "author": "Gwynne Meeks <meeks.gwynne@gmail.com> Brooke Nemchak <bnemchak@gmail.com> Jeanine Beckle <jeaninebeckle@gmail.com> Ryan Beiden <rdbeiden@gmail.com>",
+  "contributors": [
+    "Gwynne Meeks <meeks.gwynne@gmail.com>, Brooke Nemchak <bnemchak@gmail.com>, Jeanine Beckle <jeaninebeckle@gmail.com>, Ryan Beiden <rdbeiden@gmail.com>"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nss-evening-cohort-12/chatty-delta-narnia/issues"
@@ -24,10 +26,10 @@
     "@babel/preset-env": "^7.10.2",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
-    "eslint": "^7.1.0",
-    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
     "eslint-loader": "^4.0.2",
-    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import": "^2.21.2",
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
