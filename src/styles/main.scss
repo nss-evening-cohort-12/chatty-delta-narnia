@@ -7,19 +7,17 @@ body {
 }
 
 .delete-icon {
-    font-size: .8em;
+    font-size: 1em;
     color: #ff3333 !important;
     transition: ease-in-out 200ms;
     border: 2px solid #ff3333;
     border-radius: 10em;
-    padding: 0px 6px;
+    padding: 2px 6px;
 }
 
 .delete-icon:hover {
-    color: #bf2a39 !important;
-    border-color: #bf2a39;
-}
-
-a:hover {
+    color: #e6e6e6 !important;
+    border-color: #bf2a39 !important;
+    background-color: #bf2a39;
     cursor: pointer;
 }

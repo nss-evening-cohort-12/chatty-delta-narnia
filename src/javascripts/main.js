@@ -6,6 +6,7 @@ import chats from './components/buildChats';
 const init = () => {
   navbar.buildNavbar();
   chats.buildChats();
+  chats.deleteEvent();
 };
 
 init();
