@@ -1,3 +1,6 @@
+import utils from '../utils';
+import userId from '../../components/navBar/navbar'; //eslint-disable-line
+
 const theWardrobe = [
   {
     userId: 'user1',
@@ -33,4 +36,25 @@ const theWardrobe = [
 
 const getWardrobe = () => theWardrobe;
 
-export default { getWardrobe };
+let messageId = 6;
+
+const addMessageToArray = () => {
+  const newMessage = {};
+  newMessage.userId = userId.getUserIdEvent.value;
+  newMessage.messageId = `msg${messageId}`;
+  newMessage.messageContent = document.getElementById('messageBox').value;
+  newMessage.timeStamp = utils.getDate();
+
+  messageId++;
+  console.error(newMessage);
+  theWardrobe.unshift(newMessage);
+};
+
+const clickSubmitEvent = () => {
+  addMessageToArray();
+  document.getElementById('messageBox').value = null;
+  console.error('working');
+  console.error(theWardrobe);
+};
+
+export default { getWardrobe, clickSubmitEvent };
