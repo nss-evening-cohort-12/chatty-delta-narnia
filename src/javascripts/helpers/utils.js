@@ -2,6 +2,7 @@ const printToDom = (selector, text) => {
   $(selector).html(text);
 };
 
-const getDate = () => moment().format('MMMM Do YYYY, h:mm:ss a'); //eslint-disable-line
+// eslint-disable-next-line no-undef
+const getDate = () => moment().format('MMMM Do YYYY, h:mm:ss a');
 
 export default { printToDom, getDate };
