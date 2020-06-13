@@ -1,4 +1,6 @@
 import '../styles/main.scss';
+import 'bootstrap';
+import navbar from './components/navBar/navbar';
 import utils from './helpers/utils';
 import messageData from './helpers/data/messageData';
 
@@ -34,4 +36,9 @@ wardrobes.forEach((wardrobe) => {
   $('body').on('click', `#${wardrobe.messageId}`, deleteMessage);
 });
 
-printMessages();
+const init = () => {
+  navbar.buildNavbar();
+  printMessages();
+};
+
+init();
