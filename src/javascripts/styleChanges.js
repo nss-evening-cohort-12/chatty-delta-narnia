@@ -10,11 +10,6 @@ const lightMode = () => {
 
 export default { lightMode, darkMode };
 
-// const nav = () => {
-//   const domString = '<a id="dark-mode" class="toggle moon"><i class="fas fa-moon"></i></a>';
-//   utils.printToDom('#nav', domString);
-// };
-
 // // Custom Theme
 
 // const theme = () => {
@@ -53,10 +48,3 @@ export default { lightMode, darkMode };
 
 // $('body').on('click', '#submit', getColors);
 // theme();
-
-// //
-
-// $('body').on('click', '#dark-mode', styleChanges.darkMode);
-// $('body').on('click', '#light-mode', styleChanges.lightMode);
-
-// nav();

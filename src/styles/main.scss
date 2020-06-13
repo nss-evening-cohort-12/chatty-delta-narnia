@@ -8,6 +8,7 @@
 body {
     background-color: $light;
     color: $dark;
+    font-family: $main-font;
 }
 
 // Dark Mode 
@@ -26,7 +27,7 @@ body {
     @include faStyle();
 }
 .fa-moon:hover {
-    color: $light;
+    color: $blue;
 }
 .moon:before {
     @include hoverBefore($dark);
@@ -47,7 +48,7 @@ body {
     @include faStyle();
 }
 .fa-sun:hover {
-    color: $dark;
+    color: $blue;
 }
 .sun:before {
     @include hoverBefore($light);
@@ -61,11 +62,12 @@ body {
 
 .delete-icon {
     font-size: 1em;
-    color: #ff3333 !important;
+    color: $red !important;
     transition: ease-in-out 200ms;
-    border: 2px solid #ff3333;
+    border: 2px solid $red;
     border-radius: 10em;
-    padding: 2px 6px;
+    padding: 3px 6px;
+    font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .delete-icon:hover {
