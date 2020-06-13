@@ -6,14 +6,18 @@ body {
     color: #1f1f1f;
 }
 
-i {
+.delete-icon {
     font-size: .8em;
-    color: #ff3333;
+    color: #ff3333 !important;
     transition: ease-in-out 200ms;
+    border: 2px solid #ff3333;
+    border-radius: 10em;
+    padding: 0px 6px;
 }
 
-i:hover {
-    color: #bf2a39;
+.delete-icon:hover {
+    color: #bf2a39 !important;
+    border-color: #bf2a39;
 }
 
 a:hover {
