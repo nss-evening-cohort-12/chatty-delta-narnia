@@ -1,11 +1,11 @@
 import '../styles/main.scss';
 import 'bootstrap';
 import navbar from './components/navBar/navbar';
-import deleteMessage from './deleteMessage';
+import chats from './components/buildChats';
 
 const init = () => {
   navbar.buildNavbar();
-  deleteMessage.printMessages();
+  chats.buildChats();
 };
 
 init();
