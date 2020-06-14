@@ -14,6 +14,7 @@ const buildChats = () => {
     domString += `<h2 class="name">${getName(chats[i].userId)}</h2>`;
     domString += `<p class="message">${chats[i].messageContent}</p>`;
     domString += `<p class="message">${chats[i].timeStamp}</p>`;
+    domString += `<a class="delete-icon" id="${chats[i].messageId}">X</a>`;
     domString += '</div>';
     domString += '</div>';
   }
@@ -21,4 +22,21 @@ const buildChats = () => {
   utils.printToDom('#theWardrobe', domString);
 };
 
-export default { buildChats, getName };
+const deleteMessage = (e) => {
+  e.preventDefault();
+  for (let i = 0; i < chats.length; i++) {
+    if (chats[i].messageId === e.target.id) {
+      chats.splice([i], 1);
+    }
+  }
+  buildChats();
+};
+
+const deleteEvent = () => {
+  for (let i = 0; i < chats.length; i++) {
+    $('body').on('click', `#${chats[i].messageId}`, deleteMessage);
+  }
+};
+
+export default { buildChats, deleteEvent };
+
