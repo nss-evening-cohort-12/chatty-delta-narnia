@@ -39,4 +39,3 @@ const deleteEvent = () => {
 };
 
 export default { buildChats, deleteEvent };
-
