@@ -49,4 +49,8 @@ const addMessageToArray = () => {
 
 const getWardrobe = () => theWardrobe;
 
-export default { getWardrobe, addMessageToArray };
+const clearMessages = () => {
+  theWardrobe.splice(0, theWardrobe.length);
+};
+
+export default { getWardrobe, clearMessages, addMessageToArray };
