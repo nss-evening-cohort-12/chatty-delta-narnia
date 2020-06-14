@@ -43,7 +43,6 @@ const addMessageToArray = () => {
   newMessage.timeStamp = utils.getDate();
 
   messageId++;
-  console.error(newMessage);
   theWardrobe.unshift(newMessage);
 };
 

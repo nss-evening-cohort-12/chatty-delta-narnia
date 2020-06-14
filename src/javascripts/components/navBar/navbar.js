@@ -27,18 +27,18 @@ const buildNavbar = () => {
             <button type="submit" class="btn btn-secondary" id="submit">Submit!</button>
             <button type="button" class="btn btn-danger" id="clear">Clear Messages!</button>
             <a id="dark-mode" class="toggle moon"><i class="fas fa-moon"></i></a>
-            <i type=button id=“largeText” class="fas fa-search-plus"></i>
+            <a id="largeText"><i type=button class="large fas fa-search-plus"></i></a>
         </div>
       </div>
     `;
   utils.printToDom('#theWitch', domString);
-  // document.querySelector('#dropdownMenu2').addEventListener('click', removeClasses); //eslint-disable-line
   document.querySelector('#user1').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#user2').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#user3').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#user4').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#user5').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#submit').addEventListener('click', addMessages.clickSubmitEvent);
+  document.querySelector('#largeText').addEventListener('click', addMessages.largeTextEvent); //eslint-disable-line
 };
 
 const getUserIdEvent = (e) => {

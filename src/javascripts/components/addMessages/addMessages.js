@@ -1,5 +1,3 @@
-// import utils from '../../helpers/utils';
-// import wardrobe from '../../helpers/data/messageData'
 import chats from '../buildChats';
 import messages from '../../helpers/data/messageData';
 
@@ -9,4 +7,8 @@ const clickSubmitEvent = () => {
   chats.buildChats();
 };
 
-export default { clickSubmitEvent };
+const largeTextEvent = () => {
+  document.getElementById('theWardrobe').style.fontSize = 'xx-large';
+};
+
+export default { clickSubmitEvent, largeTextEvent };
