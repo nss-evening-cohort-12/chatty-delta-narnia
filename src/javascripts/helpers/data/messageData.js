@@ -33,4 +33,8 @@ const theWardrobe = [
 
 const getWardrobe = () => theWardrobe;
 
-export default { getWardrobe };
+const clearMessages = () => {
+  theWardrobe.splice(0, theWardrobe.length);
+};
+
+export default { getWardrobe, clearMessages };
