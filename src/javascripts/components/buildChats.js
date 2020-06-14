@@ -13,6 +13,7 @@ const buildChats = () => {
     domString += `<div class="chats-body" id="${chats[i].messageId}">`;
     domString += `<h2 class="name">${getName(chats[i].userId)}</h2>`;
     domString += `<p class="message">${chats[i].messageContent}</p>`;
+    domString += `<p class="message">${chats[i].timeStamp}</p>`;
     domString += `<a class="delete-icon" id="${chats[i].messageId}">X</a>`;
     domString += '</div>';
     domString += '</div>';
@@ -38,3 +39,4 @@ const deleteEvent = () => {
 };
 
 export default { buildChats, deleteEvent };
+
