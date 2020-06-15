@@ -8,9 +8,12 @@ A Narnia themed group project making a chatroom to practice modules, SASS stylin
 * Message Limit
 * Dark Theme
 * Large Text
+* Custom Themes
 
-<!-- ## Screenshots
-![Main View](./images/pet-adoption.png) -->
+## Screenshots
+![Main View](./images/narnia.png)
+![Dark View](./images/NarniaDark.png)
+![Large Text View](./images/NarniaLarge.png)
 
 ## How To Run
 1. Clone down this repo
@@ -25,7 +28,6 @@ A Narnia themed group project making a chatroom to practice modules, SASS stylin
 * [Gwynne Meeks](https://github.com/gwynnemeeks)
 
 ## TODO/Feature Request
-- [ ] Custom Themes
 - [ ] Session Storage
 - [ ] Editing
 - [ ] Chatbot
