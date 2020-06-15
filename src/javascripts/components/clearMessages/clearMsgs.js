@@ -1,4 +1,4 @@
-import clearMessages from '../helpers/data/messageData';
+import clearMessages from '../../helpers/data/messageData';
 
 const theLion = clearMessages.getWardrobe();
 let newWardrobe = theLion;
