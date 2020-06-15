@@ -10,12 +10,14 @@ const buildChats = () => {
   let domString = '';
 
   for (let i = 0; i < chats.length; i++) {
-    domString += `<div class="chats-body container" id="${chats[i].messageId}">`;
-    domString += `<h2 class="name">${getName(chats[i].userId)}:</h2>`;
-    domString += `<p class="message">"${chats[i].messageContent}"</p>`;
-    domString += `<p class="timestamp">${chats[i].timeStamp}</p>`;
-    domString += `<a class="delete-icon" id="${chats[i].messageId}">x</a>`;
-    domString += '</div>';
+    if (i < 20) {
+      domString += `<div class="chats-body container" id="${chats[i].messageId}">`;
+      domString += `<h2 class="name">${getName(chats[i].userId)}:</h2>`;
+      domString += `<p class="message">"${chats[i].messageContent}"</p>`;
+      domString += `<p class="timestamp">${chats[i].timeStamp}</p>`;
+      domString += `<a class="delete-icon" id="${chats[i].messageId}">x</a>`;
+      domString += '</div>';
+    }
   }
 
   utils.printToDom('#theWardrobe', domString);
