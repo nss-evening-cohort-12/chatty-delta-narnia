@@ -1,0 +1,52 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../../styles/styles";
+@import "../../../styles/mixins";
+
+// Dark Mode 
+
+.dark-mode {
+    background-color: $dark;
+    color: $light;
+}
+
+// Moon Hover Effect
+
+.moon {
+    @include hoverEffect($light);
+}
+.fa-moon {
+    @include faStyle();
+}
+.fa-moon:hover {
+    color: $blue;
+}
+.moon:before {
+    @include hoverBefore($dark);
+}
+.moon:hover, .moon:focus, .moon:active {
+    @include hoverFocus();
+}
+.moon:hover:before, .moon:focus:before, .moon:active:before {
+    @include hoverFocusBefore();
+}
+
+// Sun Hover Effect
+
+.sun {
+    @include hoverEffect($dark);
+}
+.fa-sun {
+    @include faStyle();
+}
+.fa-sun:hover {
+    color: $blue;
+}
+.sun:before {
+    @include hoverBefore($light);
+}
+.sun:hover, .sun:focus, .sun:active {
+    @include hoverFocus();
+}
+.sun:hover:before, .sun:focus:before, .sun:active:before {
+    @include hoverFocusBefore();
+}

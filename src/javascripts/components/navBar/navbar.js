@@ -1,6 +1,6 @@
 import utils from '../../helpers/utils';
-import addMessages from '../../components/addMessages/addMessages'; //eslint-disable-line
-import styleChanges from '../../styleChanges';
+import addMessages from '../addMessages/addMessages';
+import darkMode from '../styleChanges/darkMode';
 import 'bootstrap';
 import './navBar.scss';
 
@@ -27,7 +27,7 @@ const buildNavbar = () => {
             <button type="submit" class="btn btn-secondary" id="submit">Submit!</button>
             <button type="button" class="btn btn-danger" id="clear">Clear Messages!</button>
             <a id="dark-mode" class="toggle moon"><i class="fas fa-moon"></i></a>
-            <a id="largeText"><i type=button class="large fas fa-search-plus"></i></a>
+            <a id="largeText" class="text-toggle"><i type="button" class="large fas fa-search-plus"></i></a>
         </div>
       </div>
     `;
@@ -38,7 +38,7 @@ const buildNavbar = () => {
   document.querySelector('#user4').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#user5').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#submit').addEventListener('click', addMessages.clickSubmitEvent);
-  document.querySelector('#largeText').addEventListener('click', addMessages.largeTextEvent); //eslint-disable-line
+  // document.querySelector('#largeText').addEventListener('click', addMessages.largeTextEvent); //eslint-disable-line
 };
 
 const getUserIdEvent = (e) => {
@@ -50,7 +50,9 @@ const getUserIdEvent = (e) => {
   e.target.classList.add('active');
 };
 
-$('body').on('click', '#dark-mode', styleChanges.darkMode);
-$('body').on('click', '#light-mode', styleChanges.lightMode);
+$('body').on('click', '#dark-mode', darkMode.darkMode);
+$('body').on('click', '#light-mode', darkMode.lightMode);
+$('body').on('click', '#largeText', addMessages.largeTextEvent);
+$('body').on('click', '#smallText', addMessages.smallTextEvent);
 
 export default { buildNavbar, getUserIdEvent };

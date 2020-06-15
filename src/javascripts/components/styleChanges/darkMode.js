@@ -1,3 +1,5 @@
+import './darkMode.scss';
+
 const darkMode = () => {
   $('body').toggleClass('dark-mode', true);
   $('.toggle').replaceWith('<a id="light-mode" class="toggle sun"><i class="fas fa-sun"></i></a>');

@@ -1,0 +1,41 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../../styles/styles";
+@import "../../../styles/mixins";
+
+.large {
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+  background: $light;
+  border-radius: 50%;
+  font-size: 1.2em;
+  margin: 20px;
+  color: $dark;
+}
+
+.fa-search-plus {
+  font-size: 1.5em;
+  padding: 10px;
+  transition: ease-in-out 200ms;
+}
+.fa-search-plus:hover {
+  color: $blue;
+  font-size: 2em;
+}
+
+.fa-search-minus {
+  font-size: 1.5em;
+  padding: 10px;
+  transition: ease-in-out 200ms;
+}
+.fa-search-minus:hover {
+  color: $blue;
+  font-size: 1.2em;
+}
+
+.large-text {
+  font-size: xx-large;
+}

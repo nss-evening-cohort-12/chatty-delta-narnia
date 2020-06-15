@@ -22,6 +22,10 @@
     margin: 0px 25px;
 }
 
+.btn-secondary:hover {
+    background-color: $dark-yellow;
+}
+
 .btn-danger {
     background-color: $red;
 }

@@ -1,0 +1,45 @@
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "../../../styles/styles";
+@import "../../../styles/mixins";
+
+.delete-icon {
+  font-size: 1.5em;
+  color: $red !important;
+  transition: ease-in-out 200ms;
+  padding: 0px 8px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif !important;
+}
+
+.delete-icon:hover {
+  color: #811d27 !important;
+  cursor: pointer;
+}
+
+.chats-body {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #acacac;
+  border-radius: .5em;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.name {
+  font-size: 1.5em;
+  margin: 4px 0px 0px 0px;
+}
+
+.timestamp {
+  color: #8a8a8a;
+  font-size: .9em;
+  margin: 8px 0px 0px 0px;
+  padding: 0;
+}
+
+.message {
+  margin: 8px 0px 0px 0px;
+  padding: 0;
+}
