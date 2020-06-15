@@ -38,7 +38,6 @@ const buildNavbar = () => {
   document.querySelector('#user4').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#user5').addEventListener('click', getUserIdEvent); //eslint-disable-line
   document.querySelector('#submit').addEventListener('click', addMessages.clickSubmitEvent);
-  // document.querySelector('#largeText').addEventListener('click', addMessages.largeTextEvent); //eslint-disable-line
 };
 
 const getUserIdEvent = (e) => {
